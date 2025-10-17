@@ -57,6 +57,17 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        pizzario: {
+          beige: "hsl(var(--pizzario-beige))",
+          green: "hsl(var(--pizzario-green))",
+          red: "hsl(var(--pizzario-red))",
+          "red-light": "hsl(var(--pizzario-red-light))",
+          brown: "hsl(var(--pizzario-brown))",
+        },
+      },
+      fontFamily: {
+        margarine: ["Margarine", "cursive"],
+        montserrat: ["Montserrat Alternates", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",
