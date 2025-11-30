@@ -1,9 +1,142 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello world project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    
+    <!-- Primary Meta Tags -->
+    <title>PizzaRio | Pizzeria Italo-Brasiliana a San Giovanni Rotondo</title>
+    <meta name="title" content="PizzaRio | Pizzeria Italo-Brasiliana a San Giovanni Rotondo" />
+    <meta name="description" content="Scopri PizzaRio, la pizzeria dove la tradizione italiana incontra lo spirito brasiliano. Pizza artigianale con ingredienti freschi a San Giovanni Rotondo (FG). Prenota ora!" />
+    <meta name="keywords" content="pizzeria san giovanni rotondo, pizza artigianale, pizzeria brasiliana, ristorante italiano, pizza napoletana, pizzeria foggia, consegna pizza, pizza a domicilio" />
+    <meta name="author" content="PizzaRio" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Italian" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://pizzariosgr.it/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="restaurant" />
+    <meta property="og:url" content="https://pizzariosgr.it/" />
+    <meta property="og:title" content="PizzaRio | Pizzeria Italo-Brasiliana a San Giovanni Rotondo" />
+    <meta property="og:description" content="Scopri PizzaRio, la pizzeria dove la tradizione italiana incontra lo spirito brasiliano. Pizza artigianale con ingredienti freschi. Prenota ora!" />
+    <meta property="og:image" content="https://pizzariosgr.it/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="it_IT" />
+    <meta property="og:site_name" content="PizzaRio" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://pizzariosgr.it/" />
+    <meta property="twitter:title" content="PizzaRio | Pizzeria Italo-Brasiliana a San Giovanni Rotondo" />
+    <meta property="twitter:description" content="Scopri PizzaRio, la pizzeria dove la tradizione italiana incontra lo spirito brasiliano. Pizza artigianale con ingredienti freschi." />
+    <meta property="twitter:image" content="https://pizzariosgr.it/og-image.jpg" />
+    
+    <!-- Geo Tags for Local SEO -->
+    <meta name="geo.region" content="IT-FG" />
+    <meta name="geo.placename" content="San Giovanni Rotondo" />
+    <meta name="geo.position" content="41.7056901;15.7193335" />
+    <meta name="ICBM" content="41.7056901, 15.7193335" />
+    
+    <!-- Favicon - Logo PizzaRio -->
+    <link rel="icon" type="image/png" href="/src/assets/icons/pizzariologo 1_9.png" />
+    <link rel="apple-touch-icon" href="/src/assets/icons/pizzariologo 1_9.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#6DBA6D" />
+    <meta name="msapplication-TileColor" content="#6DBA6D" />
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    
+    <!-- Schema.org Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "@id": "https://pizzariosgr.it/#restaurant",
+      "name": "PizzaRio",
+      "alternateName": "PizzaRio - Pizzeria Italo-Brasiliana",
+      "description": "Pizzeria artigianale dove la tradizione italiana incontra lo spirito brasiliano. Pizza con ingredienti freschi e di qualità.",
+      "url": "https://pizzariosgr.it",
+      "telephone": "+393880993921",
+      "email": "info@pizzariosgr.it",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Monsignor Antonio Tortorelli, 31",
+        "addressLocality": "San Giovanni Rotondo",
+        "addressRegion": "FG",
+        "postalCode": "71013",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 41.7056901,
+        "longitude": 15.7193335
+      },
+      "image": [
+        "https://pizzariosgr.it/og-image.jpg",
+        "https://pizzariosgr.it/src/assets/icons/pizzariologo%201_9.png"
+      ],
+      "priceRange": "€€",
+      "servesCuisine": ["Italian", "Brazilian", "Pizza"],
+      "hasMenu": "https://pizzariosgr.it/#pizze",
+      "acceptsReservations": "True",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "18:00",
+          "closes": "23:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61572999105467",
+        "https://www.instagram.com/pizzario25",
+        "https://www.tiktok.com/@pizzario53"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "150",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }
+    </script>
+    
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://pizzariosgr.it/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Le Nostre Pizze",
+          "item": "https://pizzariosgr.it/#pizze"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Contatti",
+          "item": "https://pizzariosgr.it/#contatti"
+        }
+      ]
+    }
+    </script>
   </head>
 
   <body>

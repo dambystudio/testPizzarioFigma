@@ -1,0 +1,21 @@
+{
+  "name": "PizzaRio - Pizzeria Italo-Brasiliana",
+  "short_name": "PizzaRio",
+  "description": "Pizzeria artigianale dove la tradizione italiana incontra lo spirito brasiliano a San Giovanni Rotondo",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#E8D5B7",
+  "theme_color": "#6DBA6D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/src/assets/icons/pizzariologo 1_9.png",
+      "sizes": "any",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["food", "restaurants", "lifestyle"],
+  "lang": "it-IT",
+  "dir": "ltr"
+}
