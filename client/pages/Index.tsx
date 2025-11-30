@@ -85,11 +85,13 @@ export default function Index() {
             {/* Logo */}
             <div className="flex items-center">
               <img 
-                src="/src/assets/icons/pizzariologo 1_9.png" 
+                src="/src/assets/icons/pizzariologo 1_9.webp" 
                 alt="PizzaRio Logo" 
                 className="h-10 sm:h-12 lg:h-14 w-auto"
                 loading="eager"
                 decoding="async"
+                width="600"
+                height="140"
               />
             </div>
 
@@ -170,12 +172,14 @@ export default function Index() {
             {/* Logo centrato */}
             <div className="w-full max-w-[260px] mx-auto mb-4">
               <img 
-                src="/src/assets/icons/pizzariologo 1_9.png" 
+                src="/src/assets/icons/pizzariologo 1_9.webp" 
                 alt="PizzaRio Logo" 
                 className="w-full h-auto"
                 fetchPriority="high"
                 loading="eager"
                 decoding="async"
+                width="600"
+                height="140"
               />
             </div>
             
@@ -213,14 +217,14 @@ export default function Index() {
             <div className="bg-pizzario-green w-full pt-6 pb-10 px-0" style={{ clipPath: 'ellipse(85% 100% at 50% 100%)' }}>
               <div className="w-full px-0">
                 <img 
-                  src="/src/assets/icons/fotoPizzaBrasileHome.png" 
+                  src="/src/assets/icons/fotoPizzaBrasileHome.webp" 
                   alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo" 
                   className="w-full h-auto drop-shadow-2xl"
                   fetchPriority="high"
                   loading="eager"
                   decoding="async"
                   width="800"
-                  height="600"
+                  height="800"
                 />
               </div>
             </div>
@@ -236,12 +240,14 @@ export default function Index() {
                 {/* Logo */}
                 <div className="w-full max-w-[400px] lg:max-w-[550px] xl:max-w-[600px] mb-6 lg:mb-8">
                   <img 
-                    src="/src/assets/icons/pizzariologo 1_9.png" 
+                    src="/src/assets/icons/pizzariologo 1_9.webp" 
                     alt="PizzaRio Logo" 
                     className="w-full h-auto"
                     fetchPriority="high"
                     loading="eager"
                     decoding="async"
+                    width="600"
+                    height="140"
                   />
                 </div>
                 
@@ -283,14 +289,14 @@ export default function Index() {
               {/* Pizza Image */}
               <div className="absolute right-0 top-[40%] -translate-y-1/2 w-[95%] lg:w-[97%] max-w-none z-20">
                 <img 
-                  src="/src/assets/icons/fotoPizzaBrasileHome.png" 
+                  src="/src/assets/icons/fotoPizzaBrasileHome.webp" 
                   alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo" 
                   className="w-full h-auto drop-shadow-2xl"
                   fetchPriority="high"
                   loading="eager"
                   decoding="async"
                   width="800"
-                  height="600"
+                  height="800"
                 />
               </div>
             </div>
@@ -298,11 +304,13 @@ export default function Index() {
             {/* Decorative green blob - bottom left */}
             <div className="absolute bottom-[8%] left-0 w-16 h-24 lg:w-20 lg:h-28 xl:w-24 xl:h-32 z-5">
               <img 
-                src="/src/assets/icons/poligonoVerde.png" 
+                src="/src/assets/icons/poligonoVerde.webp" 
                 alt="" 
                 className="w-full h-full object-contain"
                 loading="lazy"
                 decoding="async"
+                width="100"
+                height="109"
               />
             </div>
           </div>
@@ -324,22 +332,26 @@ export default function Index() {
             {/* Tomato icon - nascosto su molto mobile */}
             <div className="hidden sm:block absolute -top-4 right-0 lg:right-12 w-16 lg:w-24 h-16 lg:h-24">
               <img 
-                src="/src/assets/icons/fotoPomodoro.png" 
+                src="/src/assets/icons/fotoPomodoro.webp" 
                 alt="" 
                 className="w-full h-auto transform rotate-[9.5deg]"
                 loading="lazy"
                 decoding="async"
+                width="100"
+                height="100"
               />
             </div>
 
             {/* Decorative leaf icon - top left - nascosto su molto mobile */}
             <div className="hidden sm:block absolute -top-12 lg:-top-16 -left-8 lg:left-0 w-24 lg:w-36 h-auto transform -rotate-[38deg]">
               <img 
-                src="/src/assets/icons/mascheraCarnevale.png" 
+                src="/src/assets/icons/mascheraCarnevale.webp" 
                 alt="" 
                 className="w-full h-auto"
                 loading="lazy"
                 decoding="async"
+                width="150"
+                height="144"
               />
             </div>
           </div>
@@ -351,11 +363,13 @@ export default function Index() {
               {/* Brazilian flag - centered */}
               <div className="w-32 sm:w-48 h-32 sm:h-48">
                 <img 
-                  src="/src/assets/icons/bandieraBrasile.png" 
+                  src="/src/assets/icons/bandieraBrasile.webp" 
                   alt="Brazilian Flag" 
                   className="w-full h-full object-contain drop-shadow-2xl"
                   loading="lazy"
                   decoding="async"
+                  width="300"
+                  height="300"
                 />
               </div>
 
@@ -396,11 +410,13 @@ export default function Index() {
               {/* Brazilian flag - centered */}
               <div className="w-72 xl:w-88 h-72 xl:h-88 z-10">
                 <img 
-                  src="/src/assets/icons/bandieraBrasile.png" 
+                  src="/src/assets/icons/bandieraBrasile.webp" 
                   alt="Brazilian Flag" 
                   className="w-full h-full object-contain drop-shadow-2xl"
                   loading="lazy"
                   decoding="async"
+                  width="300"
+                  height="300"
                 />
               </div>
 
@@ -449,11 +465,13 @@ export default function Index() {
               Le nostre pizze
             </h2>
             <img 
-              src="/src/assets/icons/fotoPizzaIconaDisegnata.png" 
+              src="/src/assets/icons/fotoPizzaIconaDisegnata.webp" 
               alt="Pizza Icon" 
               className="w-12 sm:w-14 lg:w-16 xl:w-20 h-12 sm:h-14 lg:h-16 xl:h-20 object-contain animate-bounce"
               loading="lazy"
               decoding="async"
+              width="100"
+              height="100"
             />
           </div>
           <p className="font-montserrat text-lg lg:text-xl leading-relaxed text-pizzario-brown max-w-4xl mx-auto">
@@ -483,13 +501,13 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
-                      src="/src/assets/icons/pizza1.avif" 
+                      src="/src/assets/icons/pizza1.webp" 
                       alt="Pizza Margherita artigianale" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
-                      width="420"
-                      height="420"
+                      width="500"
+                      height="411"
                     />
                   </div>
                 </div>
@@ -498,13 +516,13 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
-                      src="/src/assets/icons/pizza2.jpeg" 
+                      src="/src/assets/icons/pizza2.webp" 
                       alt="Pizza Brasiliana speciale" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
-                      width="420"
-                      height="420"
+                      width="275"
+                      height="183"
                     />
                   </div>
                 </div>
@@ -513,13 +531,13 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
-                      src="/src/assets/icons/pizza3.jpeg" 
+                      src="/src/assets/icons/pizza3.webp" 
                       alt="Pizza Diavola piccante" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
-                      width="420"
-                      height="420"
+                      width="244"
+                      height="206"
                     />
                   </div>
                 </div>
@@ -528,13 +546,13 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
-                      src="/src/assets/icons/pizza4.avif" 
+                      src="/src/assets/icons/pizza4.webp" 
                       alt="Pizza Quattro Formaggi cremosa" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
-                      width="420"
-                      height="420"
+                      width="500"
+                      height="411"
                     />
                   </div>
                 </div>
@@ -543,13 +561,13 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
-                      src="/src/assets/icons/pizza5.jpeg" 
+                      src="/src/assets/icons/pizza5.webp" 
                       alt="Pizza Capricciosa ricca" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
-                      width="420"
-                      height="420"
+                      width="290"
+                      height="174"
                     />
                   </div>
                 </div>
@@ -581,11 +599,13 @@ export default function Index() {
                 Contattaci
               </h2>
               <img 
-                src="/src/assets/icons/IconaTelefono.png" 
+                src="/src/assets/icons/IconaTelefono.webp" 
                 alt="" 
                 className="w-12 sm:w-14 lg:w-16 h-auto"
                 loading="lazy"
                 decoding="async"
+                width="100"
+                height="112"
               />
             </div>
             <p className="font-montserrat text-base sm:text-lg lg:text-xl leading-relaxed text-pizzario-brown max-w-4xl mx-auto px-4">
@@ -747,11 +767,13 @@ export default function Index() {
             {/* Logo e descrizione */}
             <div className="lg:col-span-2">
               <img 
-                src="/src/assets/icons/pizzariologo 1_9.png" 
+                src="/src/assets/icons/pizzariologo 1_9.webp" 
                 alt="PizzaRio Logo" 
                 className="h-20 w-auto mb-4"
                 loading="lazy"
                 decoding="async"
+                width="600"
+                height="140"
               />
               <p className="font-montserrat text-sm text-white/80 max-w-md">
                 Dove lo spirito brasiliano e la cucina italiana si uniscono per creare un'esperienza culinaria indimenticabile.
@@ -800,11 +822,13 @@ export default function Index() {
               >
                 <span className="font-montserrat text-sm text-white/70">Realizzato da</span>
                 <img 
-                  src="/src/assets/icons/logoDambyStudio.png" 
+                  src="/src/assets/icons/logoDambyStudio.webp" 
                   alt="DambyStudio" 
                   className="h-10 w-auto"
                   loading="lazy"
                   decoding="async"
+                  width="150"
+                  height="145"
                 />
                 <a>DambyStudio</a>
               </a>
