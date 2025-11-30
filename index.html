@@ -54,6 +54,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     
+    <!-- Preload critical images for LCP -->
+    <link rel="preload" as="image" href="/src/assets/icons/pizzariologo 1_9.png" />
+    <link rel="preload" as="image" href="/src/assets/icons/fotoPizzaBrasileHome.png" fetchpriority="high" />
+    
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Margarine&family=Montserrat+Alternates:wght@400;600;700&display=swap" as="style" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Margarine&family=Montserrat+Alternates:wght@400;600;700&display=swap" media="print" onload="this.media='all'" />
+    
     <!-- Schema.org Structured Data for Local Business -->
     <script type="application/ld+json">
     {

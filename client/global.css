@@ -1,5 +1,4 @@
-/** @import must precede all other statements */
-@import url("https://fonts.googleapis.com/css2?family=Margarine&family=Montserrat+Alternates:wght@400;600;700&display=swap");
+/** Fonts are loaded from index.html with preload for better performance */
 
 @tailwind base;
 @tailwind components;

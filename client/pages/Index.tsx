@@ -88,6 +88,8 @@ export default function Index() {
                 src="/src/assets/icons/pizzariologo 1_9.png" 
                 alt="PizzaRio Logo" 
                 className="h-10 sm:h-12 lg:h-14 w-auto"
+                loading="eager"
+                decoding="async"
               />
             </div>
 
@@ -171,6 +173,9 @@ export default function Index() {
                 src="/src/assets/icons/pizzariologo 1_9.png" 
                 alt="PizzaRio Logo" 
                 className="w-full h-auto"
+                fetchPriority="high"
+                loading="eager"
+                decoding="async"
               />
             </div>
             
@@ -209,8 +214,13 @@ export default function Index() {
               <div className="w-full px-0">
                 <img 
                   src="/src/assets/icons/fotoPizzaBrasileHome.png" 
-                  alt="Brazilian Pizza" 
+                  alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo" 
                   className="w-full h-auto drop-shadow-2xl"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
               </div>
             </div>
@@ -229,6 +239,9 @@ export default function Index() {
                     src="/src/assets/icons/pizzariologo 1_9.png" 
                     alt="PizzaRio Logo" 
                     className="w-full h-auto"
+                    fetchPriority="high"
+                    loading="eager"
+                    decoding="async"
                   />
                 </div>
                 
@@ -271,8 +284,13 @@ export default function Index() {
               <div className="absolute right-0 top-[40%] -translate-y-1/2 w-[95%] lg:w-[97%] max-w-none z-20">
                 <img 
                   src="/src/assets/icons/fotoPizzaBrasileHome.png" 
-                  alt="Brazilian Pizza" 
+                  alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo" 
                   className="w-full h-auto drop-shadow-2xl"
+                  fetchPriority="high"
+                  loading="eager"
+                  decoding="async"
+                  width="800"
+                  height="600"
                 />
               </div>
             </div>
@@ -283,6 +301,8 @@ export default function Index() {
                 src="/src/assets/icons/poligonoVerde.png" 
                 alt="" 
                 className="w-full h-full object-contain"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -307,6 +327,8 @@ export default function Index() {
                 src="/src/assets/icons/fotoPomodoro.png" 
                 alt="" 
                 className="w-full h-auto transform rotate-[9.5deg]"
+                loading="lazy"
+                decoding="async"
               />
             </div>
 
@@ -316,6 +338,8 @@ export default function Index() {
                 src="/src/assets/icons/mascheraCarnevale.png" 
                 alt="" 
                 className="w-full h-auto"
+                loading="lazy"
+                decoding="async"
               />
             </div>
           </div>
@@ -330,6 +354,8 @@ export default function Index() {
                   src="/src/assets/icons/bandieraBrasile.png" 
                   alt="Brazilian Flag" 
                   className="w-full h-full object-contain drop-shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 
@@ -373,6 +399,8 @@ export default function Index() {
                   src="/src/assets/icons/bandieraBrasile.png" 
                   alt="Brazilian Flag" 
                   className="w-full h-full object-contain drop-shadow-2xl"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
 
@@ -424,6 +452,8 @@ export default function Index() {
               src="/src/assets/icons/fotoPizzaIconaDisegnata.png" 
               alt="Pizza Icon" 
               className="w-12 sm:w-14 lg:w-16 xl:w-20 h-12 sm:h-14 lg:h-16 xl:h-20 object-contain animate-bounce"
+              loading="lazy"
+              decoding="async"
             />
           </div>
           <p className="font-montserrat text-lg lg:text-xl leading-relaxed text-pizzario-brown max-w-4xl mx-auto">
@@ -454,8 +484,12 @@ export default function Index() {
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
                       src="/src/assets/icons/pizza1.avif" 
-                      alt="Pizza Margherita" 
+                      alt="Pizza Margherita artigianale" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                      width="420"
+                      height="420"
                     />
                   </div>
                 </div>
@@ -465,8 +499,12 @@ export default function Index() {
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
                       src="/src/assets/icons/pizza2.jpeg" 
-                      alt="Pizza Brasiliana" 
+                      alt="Pizza Brasiliana speciale" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                      width="420"
+                      height="420"
                     />
                   </div>
                 </div>
@@ -476,8 +514,12 @@ export default function Index() {
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
                       src="/src/assets/icons/pizza3.jpeg" 
-                      alt="Pizza Diavola" 
+                      alt="Pizza Diavola piccante" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                      width="420"
+                      height="420"
                     />
                   </div>
                 </div>
@@ -487,8 +529,12 @@ export default function Index() {
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
                       src="/src/assets/icons/pizza4.avif" 
-                      alt="Pizza Quattro Formaggi" 
+                      alt="Pizza Quattro Formaggi cremosa" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                      width="420"
+                      height="420"
                     />
                   </div>
                 </div>
@@ -498,8 +544,12 @@ export default function Index() {
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img 
                       src="/src/assets/icons/pizza5.jpeg" 
-                      alt="Pizza Capricciosa" 
+                      alt="Pizza Capricciosa ricca" 
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
+                      loading="lazy"
+                      decoding="async"
+                      width="420"
+                      height="420"
                     />
                   </div>
                 </div>
@@ -534,6 +584,8 @@ export default function Index() {
                 src="/src/assets/icons/IconaTelefono.png" 
                 alt="" 
                 className="w-12 sm:w-14 lg:w-16 h-auto"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <p className="font-montserrat text-base sm:text-lg lg:text-xl leading-relaxed text-pizzario-brown max-w-4xl mx-auto px-4">
@@ -698,6 +750,8 @@ export default function Index() {
                 src="/src/assets/icons/pizzariologo 1_9.png" 
                 alt="PizzaRio Logo" 
                 className="h-20 w-auto mb-4"
+                loading="lazy"
+                decoding="async"
               />
               <p className="font-montserrat text-sm text-white/80 max-w-md">
                 Dove lo spirito brasiliano e la cucina italiana si uniscono per creare un'esperienza culinaria indimenticabile.
@@ -749,6 +803,8 @@ export default function Index() {
                   src="/src/assets/icons/logoDambyStudio.png" 
                   alt="DambyStudio" 
                   className="h-10 w-auto"
+                  loading="lazy"
+                  decoding="async"
                 />
                 <a>DambyStudio</a>
               </a>
