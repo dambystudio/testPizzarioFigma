@@ -38,7 +38,7 @@ export default function Index() {
 
     const nextSlide = () => {
       if (isPaused) return;
-      
+
       setCurrentSlide((prev) => {
         const next = (prev + 1) % 5; // 5 pizze totali, torna a 0 dopo la quinta
         scrollToSlide(next);
@@ -53,7 +53,7 @@ export default function Index() {
     const pauseScroll = () => {
       isPaused = true;
     };
-    
+
     const resumeScroll = () => {
       isPaused = false;
     };
@@ -84,9 +84,9 @@ export default function Index() {
           <div className="flex items-center justify-between">
             {/* Logo */}
             <div className="flex items-center">
-              <img 
-                src="/src/assets/icons/pizzariologo 1_9.webp" 
-                alt="PizzaRio Logo" 
+              <img
+                src="/src/assets/icons/pizzariologo 1_9.webp"
+                alt="PizzaRio Logo"
                 className="h-10 sm:h-12 lg:h-14 w-auto"
                 loading="eager"
                 decoding="async"
@@ -104,18 +104,18 @@ export default function Index() {
             </div>
 
             {/* Hamburger Button - visibile solo su mobile */}
-            <button 
+            <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 rounded-lg hover:bg-pizzario-green/10 transition-colors"
               aria-label="Toggle menu"
             >
-              <svg 
-                className="w-6 h-6 text-pizzario-brown" 
-                fill="none" 
-                strokeLinecap="round" 
-                strokeLinejoin="round" 
-                strokeWidth="2" 
-                viewBox="0 0 24 24" 
+              <svg
+                className="w-6 h-6 text-pizzario-brown"
+                fill="none"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
                 stroke="currentColor"
               >
                 {mobileMenuOpen ? (
@@ -130,29 +130,29 @@ export default function Index() {
           {/* Mobile Menu Dropdown */}
           {mobileMenuOpen && (
             <div className="md:hidden mt-4 pb-4 space-y-3 border-t border-pizzario-green/20 pt-4">
-              <a 
-                href="#home" 
+              <a
+                href="#home"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block font-montserrat text-pizzario-brown font-semibold hover:text-pizzario-green transition-colors py-2"
               >
                 Home
               </a>
-              <a 
-                href="#chi-siamo" 
+              <a
+                href="#chi-siamo"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block font-montserrat text-pizzario-brown font-semibold hover:text-pizzario-green transition-colors py-2"
               >
                 Chi Siamo
               </a>
-              <a 
-                href="#pizze" 
+              <a
+                href="#pizze"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block font-montserrat text-pizzario-brown font-semibold hover:text-pizzario-green transition-colors py-2"
               >
                 Le Nostre Pizze
               </a>
-              <a 
-                href="#contatti" 
+              <a
+                href="#contatti"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block font-montserrat text-pizzario-brown font-semibold hover:text-pizzario-green transition-colors py-2"
               >
@@ -171,9 +171,9 @@ export default function Index() {
           <div className="flex-1 flex flex-col justify-center px-6 py-8">
             {/* Logo centrato */}
             <div className="w-full max-w-[260px] mx-auto mb-4">
-              <img 
-                src="/src/assets/icons/pizzariologo 1_9.webp" 
-                alt="PizzaRio Logo" 
+              <img
+                src="/src/assets/icons/pizzariologo 1_9.webp"
+                alt="PizzaRio Logo"
                 className="w-full h-auto"
                 fetchPriority="high"
                 loading="eager"
@@ -182,7 +182,7 @@ export default function Index() {
                 height="140"
               />
             </div>
-            
+
             {/* Welcome Text centrato */}
             <p className="text-pizzario-brown text-sm leading-relaxed font-montserrat font-normal text-center max-w-[320px] mx-auto">
               Benvenuti da PizzaRio, dove lo spirito brasiliano e la cucina italiana si uniscono insieme per creare un'indimenticabile esperienza culinaria
@@ -190,8 +190,8 @@ export default function Index() {
 
             {/* CTA Buttons centrati */}
             <div className="flex flex-col gap-3 mt-6 px-4">
-              <a 
-                href="#pizze" 
+              <a
+                href="#pizze"
                 className="inline-flex items-center justify-center px-6 py-3 bg-pizzario-green text-white text-sm font-montserrat font-semibold rounded-full shadow-lg"
               >
                 Scopri il Menu
@@ -199,8 +199,8 @@ export default function Index() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                 </svg>
               </a>
-              <a 
-                href="#contatti" 
+              <a
+                href="#contatti"
                 className="inline-flex items-center justify-center px-6 py-3 bg-white border-2 border-pizzario-green text-pizzario-green text-sm font-montserrat font-semibold rounded-full shadow-lg"
               >
                 Contattaci
@@ -216,9 +216,9 @@ export default function Index() {
             {/* Sfondo verde che occupa tutta la larghezza */}
             <div className="bg-pizzario-green w-full pt-6 pb-10 px-0" style={{ clipPath: 'ellipse(85% 100% at 50% 100%)' }}>
               <div className="w-full px-0">
-                <img 
-                  src="/src/assets/icons/fotoPizzaBrasileHome.webp" 
-                  alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo" 
+                <img
+                  src="/src/assets/icons/fotoPizzaBrasileHome.webp"
+                  alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo"
                   className="w-full h-auto drop-shadow-2xl"
                   fetchPriority="high"
                   loading="eager"
@@ -239,9 +239,9 @@ export default function Index() {
               <div className="max-w-[55%] lg:max-w-[45%] xl:max-w-[42%]">
                 {/* Logo */}
                 <div className="w-full max-w-[400px] lg:max-w-[550px] xl:max-w-[600px] mb-6 lg:mb-8">
-                  <img 
-                    src="/src/assets/icons/pizzariologo 1_9.webp" 
-                    alt="PizzaRio Logo" 
+                  <img
+                    src="/src/assets/icons/pizzariologo 1_9.webp"
+                    alt="PizzaRio Logo"
                     className="w-full h-auto"
                     fetchPriority="high"
                     loading="eager"
@@ -250,7 +250,7 @@ export default function Index() {
                     height="140"
                   />
                 </div>
-                
+
                 {/* Welcome Text */}
                 <p className="text-pizzario-brown text-base md:text-lg lg:text-2xl xl:text-[26px] leading-relaxed font-montserrat font-normal max-w-[550px] mt-4 lg:mt-6">
                   Benvenuti da PizzaRio, dove lo spirito brasiliano e la cucina italiana si uniscono insieme per creare un'indimenticabile esperienza culinaria
@@ -258,8 +258,8 @@ export default function Index() {
 
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-5 mt-10 lg:mt-12">
-                  <a 
-                    href="#pizze" 
+                  <a
+                    href="#pizze"
                     className="inline-flex items-center justify-center px-10 lg:px-12 py-4 lg:py-5 bg-pizzario-green text-white text-base lg:text-xl font-montserrat font-semibold rounded-full hover:bg-pizzario-green/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Scopri il Menu
@@ -267,8 +267,8 @@ export default function Index() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
                     </svg>
                   </a>
-                  <a 
-                    href="#contatti" 
+                  <a
+                    href="#contatti"
                     className="inline-flex items-center justify-center px-10 lg:px-12 py-4 lg:py-5 bg-white border-2 border-pizzario-green text-pizzario-green text-base lg:text-xl font-montserrat font-semibold rounded-full hover:bg-pizzario-green hover:text-white transition-all duration-300 shadow-lg"
                   >
                     Contattaci
@@ -281,16 +281,16 @@ export default function Index() {
             </div>
 
             {/* Green diagonal shape */}
-            <div className="absolute top-0 right-0 bottom-0 w-[48%] md:w-[50%] lg:w-[50%] z-10" style={{ clipPath: 'polygon(25% 0, 100% 0, 100% 100%, 0% 100%)' }}>
+            <div className="absolute top-0 right-0 bottom-0 w-[48%] md:w-[50%] lg:w-[50%] z-10" style={{ clipPath: 'polygon(30% 0, 100% 0, 100% 100%, 0% 100%)' }}>
               <svg className="absolute top-0 right-0 h-full w-auto min-w-full" viewBox="0 0 1000 1080" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <path d="M1000 0L300 0L0 1080H1000V0Z" fill="#6DBA6D"/>
+                <path d="M1000 0L300 0L0 1080H1000V0Z" fill="#6DBA6D" />
               </svg>
-              
+
               {/* Pizza Image */}
               <div className="absolute right-0 top-[40%] -translate-y-1/2 w-[95%] lg:w-[97%] max-w-none z-20">
-                <img 
-                  src="/src/assets/icons/fotoPizzaBrasileHome.webp" 
-                  alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo" 
+                <img
+                  src="/src/assets/icons/fotoPizzaBrasileHome.webp"
+                  alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo"
                   className="w-full h-auto drop-shadow-2xl"
                   fetchPriority="high"
                   loading="eager"
@@ -303,9 +303,9 @@ export default function Index() {
 
             {/* Decorative green blob - bottom left */}
             <div className="absolute bottom-[8%] left-0 w-16 h-24 lg:w-20 lg:h-28 xl:w-24 xl:h-32 z-5">
-              <img 
-                src="/src/assets/icons/poligonoVerde.webp" 
-                alt="" 
+              <img
+                src="/src/assets/icons/poligonoVerde.webp"
+                alt=""
                 className="w-full h-full object-contain"
                 loading="lazy"
                 decoding="async"
@@ -328,12 +328,12 @@ export default function Index() {
             <p className="font-montserrat text-base sm:text-lg lg:text-xl leading-relaxed text-pizzario-brown max-w-4xl mx-auto px-4">
               Nel cuore di San Giovanni Rotondo, PizzaRio nasce dall'incontro di due culture straordinarie: la passione e l'allegria del Brasile si fondono con la maestria e la tradizione italiana.
             </p>
-            
+
             {/* Tomato icon - nascosto su molto mobile */}
             <div className="hidden sm:block absolute -top-4 right-0 lg:right-12 w-16 lg:w-24 h-16 lg:h-24">
-              <img 
-                src="/src/assets/icons/fotoPomodoro.webp" 
-                alt="" 
+              <img
+                src="/src/assets/icons/fotoPomodoro.webp"
+                alt=""
                 className="w-full h-auto transform rotate-[9.5deg]"
                 loading="lazy"
                 decoding="async"
@@ -344,9 +344,9 @@ export default function Index() {
 
             {/* Decorative leaf icon - top left - nascosto su molto mobile */}
             <div className="hidden sm:block absolute -top-12 lg:-top-16 -left-8 lg:left-0 w-24 lg:w-36 h-auto transform -rotate-[38deg]">
-              <img 
-                src="/src/assets/icons/mascheraCarnevale.webp" 
-                alt="" 
+              <img
+                src="/src/assets/icons/mascheraCarnevale.webp"
+                alt=""
                 className="w-full h-auto"
                 loading="lazy"
                 decoding="async"
@@ -362,9 +362,9 @@ export default function Index() {
             <div className="lg:hidden flex flex-col items-center gap-6">
               {/* Brazilian flag - centered */}
               <div className="w-32 sm:w-48 h-32 sm:h-48">
-                <img 
-                  src="/src/assets/icons/bandieraBrasile.webp" 
-                  alt="Brazilian Flag" 
+                <img
+                  src="/src/assets/icons/bandieraBrasile.webp"
+                  alt="Brazilian Flag"
                   className="w-full h-full object-contain drop-shadow-2xl"
                   loading="lazy"
                   decoding="async"
@@ -381,21 +381,21 @@ export default function Index() {
                     Ricette autentiche tramandate di generazione in generazione, con l'impasto lievitato naturalmente.
                   </p>
                 </div>
-                
+
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-5 shadow-xl border-2 border-pizzario-green/40">
                   <h3 className="font-margarine text-lg sm:text-xl text-pizzario-green mb-2">Spirito Brasiliano</h3>
                   <p className="font-montserrat text-sm text-pizzario-brown leading-relaxed">
                     L'energia contagiosa e i colori vivaci del Brasile in ogni piatto.
                   </p>
                 </div>
-                
+
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-5 shadow-xl border-2 border-pizzario-green/40">
                   <h3 className="font-margarine text-lg sm:text-xl text-pizzario-green mb-2">Ingredienti Freschi</h3>
                   <p className="font-montserrat text-sm text-pizzario-brown leading-relaxed">
                     Solo i migliori ingredienti selezionati con cura ogni giorno.
                   </p>
                 </div>
-                
+
                 <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 sm:p-5 shadow-xl border-2 border-pizzario-green/40">
                   <h3 className="font-margarine text-lg sm:text-xl text-pizzario-green mb-2">Passione Unica</h3>
                   <p className="font-montserrat text-sm text-pizzario-brown leading-relaxed">
@@ -409,9 +409,9 @@ export default function Index() {
             <div className="hidden lg:flex relative justify-center items-center min-h-[800px]">
               {/* Brazilian flag - centered */}
               <div className="w-72 xl:w-88 h-72 xl:h-88 z-10">
-                <img 
-                  src="/src/assets/icons/bandieraBrasile.webp" 
-                  alt="Brazilian Flag" 
+                <img
+                  src="/src/assets/icons/bandieraBrasile.webp"
+                  alt="Brazilian Flag"
                   className="w-full h-full object-contain drop-shadow-2xl"
                   loading="lazy"
                   decoding="async"
@@ -427,7 +427,7 @@ export default function Index() {
                   Ricette autentiche tramandate di generazione in generazione, con l'impasto lievitato naturalmente e la passione per la vera pizza napoletana. Ogni ingrediente racconta una storia di sapori italiani.
                 </p>
               </div>
-              
+
               {/* Card Alto Destra */}
               <div className="absolute top-0 right-0 w-96 xl:w-[420px] bg-white/90 backdrop-blur-sm rounded-2xl p-6 xl:p-8 shadow-xl border-2 border-pizzario-green/40 hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <h3 className="font-margarine text-3xl xl:text-4xl text-pizzario-green mb-3">Spirito Brasiliano</h3>
@@ -435,7 +435,7 @@ export default function Index() {
                   L'energia contagiosa, la gioia e i colori vivaci del Brasile in ogni piatto. Un'atmosfera calorosa che trasforma ogni pasto in una festa indimenticabile.
                 </p>
               </div>
-              
+
               {/* Card Basso Sinistra */}
               <div className="absolute bottom-0 left-0 w-96 xl:w-[420px] bg-white/90 backdrop-blur-sm rounded-2xl p-6 xl:p-8 shadow-xl border-2 border-pizzario-green/40 hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <h3 className="font-margarine text-3xl xl:text-4xl text-pizzario-green mb-3">Ingredienti Freschi</h3>
@@ -443,7 +443,7 @@ export default function Index() {
                   Solo i migliori ingredienti selezionati con cura ogni giorno. Mozzarella freschissima, pomodori e basilico appena raccolto per garantire qualità superiore.
                 </p>
               </div>
-              
+
               {/* Card Basso Destra */}
               <div className="absolute bottom-0 right-0 w-96 xl:w-[420px] bg-white/90 backdrop-blur-sm rounded-2xl p-6 xl:p-8 shadow-xl border-2 border-pizzario-green/40 hover:shadow-2xl hover:scale-105 transition-all duration-300">
                 <h3 className="font-margarine text-3xl xl:text-4xl text-pizzario-green mb-3">Passione Unica</h3>
@@ -464,9 +464,9 @@ export default function Index() {
             <h2 className="font-margarine text-3xl sm:text-4xl lg:text-5xl text-black">
               Le nostre pizze
             </h2>
-            <img 
-              src="/src/assets/icons/fotoPizzaIconaDisegnata.webp" 
-              alt="Pizza Icon" 
+            <img
+              src="/src/assets/icons/fotoPizzaIconaDisegnata.webp"
+              alt="Pizza Icon"
               className="w-12 sm:w-14 lg:w-16 xl:w-20 h-12 sm:h-14 lg:h-16 xl:h-20 object-contain animate-bounce"
               loading="lazy"
               decoding="async"
@@ -484,7 +484,7 @@ export default function Index() {
           {/* Top wave - full width senza spazi */}
           <div className="w-full h-16 lg:h-24" style={{ display: 'block', lineHeight: 0, fontSize: 0 }}>
             <svg className="w-full h-full" style={{ display: 'block', verticalAlign: 'bottom' }} viewBox="0 0 1920 302" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M-30.8112 79.956C34.7645 35.4024 100.337 -9.15121 165.912 2.78696C231.488 14.7235 297.06 83.1535 362.636 79.956C428.212 76.7586 493.784 1.93377 559.36 2.78696C624.935 3.63853 690.508 80.1697 756.083 79.956C821.659 79.7439 887.231 2.78696 952.807 2.78696C1018.38 2.78696 1083.95 79.7439 1149.53 79.956C1215.11 80.1697 1280.68 3.63853 1346.25 2.78696C1411.83 1.93377 1477.4 76.7586 1542.98 79.956C1608.55 83.1535 1674.13 14.7235 1739.7 2.78696C1805.28 -9.15121 1870.85 35.4024 1936.42 79.956V301.178C1870.85 301.178 1805.28 301.178 1739.7 301.178C1674.13 301.178 1608.55 301.178 1542.98 301.178C1477.4 301.178 1411.83 301.178 1346.25 301.178C1280.68 301.178 1215.11 301.178 1149.53 301.178C1083.95 301.178 1018.38 301.178 952.807 301.178C887.231 301.178 821.659 301.178 756.083 301.178C690.508 301.178 624.935 301.178 559.36 301.178C493.784 301.178 428.212 301.178 362.636 301.178C297.06 301.178 231.488 301.178 165.912 301.178C100.337 301.178 34.7645 301.178 -30.8112 301.178V79.956Z" fill="#A42426"/>
+              <path d="M-30.8112 79.956C34.7645 35.4024 100.337 -9.15121 165.912 2.78696C231.488 14.7235 297.06 83.1535 362.636 79.956C428.212 76.7586 493.784 1.93377 559.36 2.78696C624.935 3.63853 690.508 80.1697 756.083 79.956C821.659 79.7439 887.231 2.78696 952.807 2.78696C1018.38 2.78696 1083.95 79.7439 1149.53 79.956C1215.11 80.1697 1280.68 3.63853 1346.25 2.78696C1411.83 1.93377 1477.4 76.7586 1542.98 79.956C1608.55 83.1535 1674.13 14.7235 1739.7 2.78696C1805.28 -9.15121 1870.85 35.4024 1936.42 79.956V301.178C1870.85 301.178 1805.28 301.178 1739.7 301.178C1674.13 301.178 1608.55 301.178 1542.98 301.178C1477.4 301.178 1411.83 301.178 1346.25 301.178C1280.68 301.178 1215.11 301.178 1149.53 301.178C1083.95 301.178 1018.38 301.178 952.807 301.178C887.231 301.178 821.659 301.178 756.083 301.178C690.508 301.178 624.935 301.178 559.36 301.178C493.784 301.178 428.212 301.178 362.636 301.178C297.06 301.178 231.488 301.178 165.912 301.178C100.337 301.178 34.7645 301.178 -30.8112 301.178V79.956Z" fill="#A42426" />
             </svg>
           </div>
 
@@ -492,7 +492,7 @@ export default function Index() {
           <div className="w-full bg-pizzario-red py-12 lg:py-20" style={{ marginTop: '-1px', marginBottom: '-1px' }}>
             <div className="w-full px-4 sm:px-8 lg:px-12">
               {/* Carousel di immagini con auto-scroll - ottimizzato per touch */}
-              <div 
+              <div
                 ref={carouselRef}
                 className="flex gap-4 sm:gap-6 lg:gap-8 overflow-x-auto pb-4 snap-x snap-mandatory scrollbar-hide"
                 style={{ WebkitOverflowScrolling: 'touch' }}
@@ -500,9 +500,9 @@ export default function Index() {
                 {/* Pizza 1 */}
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
-                    <img 
-                      src="/src/assets/icons/pizza1.webp" 
-                      alt="Pizza Margherita artigianale" 
+                    <img
+                      src="/src/assets/icons/pizza1.webp"
+                      alt="Pizza Margherita artigianale"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
@@ -515,9 +515,9 @@ export default function Index() {
                 {/* Pizza 2 */}
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
-                    <img 
-                      src="/src/assets/icons/pizza2.webp" 
-                      alt="Pizza Brasiliana speciale" 
+                    <img
+                      src="/src/assets/icons/pizza2.webp"
+                      alt="Pizza Brasiliana speciale"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
@@ -530,9 +530,9 @@ export default function Index() {
                 {/* Pizza 3 */}
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
-                    <img 
-                      src="/src/assets/icons/pizza3.webp" 
-                      alt="Pizza Diavola piccante" 
+                    <img
+                      src="/src/assets/icons/pizza3.webp"
+                      alt="Pizza Diavola piccante"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
@@ -545,9 +545,9 @@ export default function Index() {
                 {/* Pizza 4 */}
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
-                    <img 
-                      src="/src/assets/icons/pizza4.webp" 
-                      alt="Pizza Quattro Formaggi cremosa" 
+                    <img
+                      src="/src/assets/icons/pizza4.webp"
+                      alt="Pizza Quattro Formaggi cremosa"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
@@ -560,9 +560,9 @@ export default function Index() {
                 {/* Pizza 5 */}
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
-                    <img 
-                      src="/src/assets/icons/pizza5.webp" 
-                      alt="Pizza Capricciosa ricca" 
+                    <img
+                      src="/src/assets/icons/pizza5.webp"
+                      alt="Pizza Capricciosa ricca"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
                       decoding="async"
@@ -583,7 +583,7 @@ export default function Index() {
           {/* Bottom wave - full width senza spazi */}
           <div className="w-full h-16 lg:h-24" style={{ display: 'block', lineHeight: 0, fontSize: 0 }}>
             <svg className="w-full h-full" style={{ display: 'block', verticalAlign: 'top' }} viewBox="0 0 1920 301" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-              <path d="M1936.24 221.222C1870.66 265.776 1805.09 310.329 1739.51 298.391C1673.94 286.454 1608.36 218.025 1542.79 221.222C1477.21 224.419 1411.64 299.244 1346.07 298.391C1280.49 297.539 1214.92 221.008 1149.34 221.222C1083.77 221.434 1018.19 298.391 952.618 298.391C887.042 298.391 821.47 221.434 755.894 221.222C690.319 221.008 624.746 297.539 559.171 298.391C493.595 299.244 428.023 224.419 362.447 221.222C296.871 218.025 231.299 286.454 165.724 298.391C100.148 310.329 34.5757 265.776 -31 221.222V-6.10352e-05C34.5757 -6.10352e-05 100.148 -6.10352e-05 165.724 -6.10352e-05C231.299 -6.10352e-05 296.871 -6.10352e-05 362.447 -6.10352e-05C428.023 -6.10352e-05 493.595 -6.10352e-05 559.171 -6.10352e-05C624.746 -6.10352e-05 690.319 -6.10352e-05 755.894 -6.10352e-05C821.47 -6.10352e-05 887.042 -6.10352e-05 952.618 -6.10352e-05C1018.19 -6.10352e-05 1083.77 -6.10352e-05 1149.34 -6.10352e-05C1214.92 -6.10352e-05 1280.49 -6.10352e-05 1346.07 -6.10352e-05C1411.64 -6.10352e-05 1477.21 -6.10352e-05 1542.79 -6.10352e-05C1608.36 -6.10352e-05 1673.94 -6.10352e-05 1739.51 -6.10352e-05C1805.09 -6.10352e-05 1870.66 -6.10352e-05 1936.24 -6.10352e-05V221.222Z" fill="#A42426"/>
+              <path d="M1936.24 221.222C1870.66 265.776 1805.09 310.329 1739.51 298.391C1673.94 286.454 1608.36 218.025 1542.79 221.222C1477.21 224.419 1411.64 299.244 1346.07 298.391C1280.49 297.539 1214.92 221.008 1149.34 221.222C1083.77 221.434 1018.19 298.391 952.618 298.391C887.042 298.391 821.47 221.434 755.894 221.222C690.319 221.008 624.746 297.539 559.171 298.391C493.595 299.244 428.023 224.419 362.447 221.222C296.871 218.025 231.299 286.454 165.724 298.391C100.148 310.329 34.5757 265.776 -31 221.222V-6.10352e-05C34.5757 -6.10352e-05 100.148 -6.10352e-05 165.724 -6.10352e-05C231.299 -6.10352e-05 296.871 -6.10352e-05 362.447 -6.10352e-05C428.023 -6.10352e-05 493.595 -6.10352e-05 559.171 -6.10352e-05C624.746 -6.10352e-05 690.319 -6.10352e-05 755.894 -6.10352e-05C821.47 -6.10352e-05 887.042 -6.10352e-05 952.618 -6.10352e-05C1018.19 -6.10352e-05 1083.77 -6.10352e-05 1149.34 -6.10352e-05C1214.92 -6.10352e-05 1280.49 -6.10352e-05 1346.07 -6.10352e-05C1411.64 -6.10352e-05 1477.21 -6.10352e-05 1542.79 -6.10352e-05C1608.36 -6.10352e-05 1673.94 -6.10352e-05 1739.51 -6.10352e-05C1805.09 -6.10352e-05 1870.66 -6.10352e-05 1936.24 -6.10352e-05V221.222Z" fill="#A42426" />
             </svg>
           </div>
         </div>
@@ -598,9 +598,9 @@ export default function Index() {
               <h2 className="font-margarine text-3xl sm:text-4xl lg:text-5xl text-black">
                 Contattaci
               </h2>
-              <img 
-                src="/src/assets/icons/IconaTelefono.webp" 
-                alt="" 
+              <img
+                src="/src/assets/icons/IconaTelefono.webp"
+                alt=""
                 className="w-12 sm:w-14 lg:w-16 h-auto"
                 loading="lazy"
                 decoding="async"
@@ -693,37 +693,37 @@ export default function Index() {
           <div className="mt-8 lg:mt-12 text-center">
             <h3 className="font-margarine text-xl sm:text-2xl lg:text-3xl text-pizzario-green mb-4">Seguici sui social</h3>
             <div className="flex justify-center gap-3 sm:gap-4">
-              <a 
-                href="https://www.facebook.com/profile.php?id=61572999105467" 
+              <a
+                href="https://www.facebook.com/profile.php?id=61572999105467"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 sm:w-14 sm:h-14 bg-pizzario-green rounded-full flex items-center justify-center hover:bg-pizzario-red hover:scale-110 transition-all duration-300 shadow-lg" 
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-pizzario-green rounded-full flex items-center justify-center hover:bg-pizzario-red hover:scale-110 transition-all duration-300 shadow-lg"
                 aria-label="Facebook"
               >
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
               </a>
-              <a 
-                href="https://www.instagram.com/pizzario25" 
+              <a
+                href="https://www.instagram.com/pizzario25"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 sm:w-14 sm:h-14 bg-pizzario-green rounded-full flex items-center justify-center hover:bg-pizzario-red hover:scale-110 transition-all duration-300 shadow-lg" 
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-pizzario-green rounded-full flex items-center justify-center hover:bg-pizzario-red hover:scale-110 transition-all duration-300 shadow-lg"
                 aria-label="Instagram"
               >
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg>
               </a>
-              <a 
-                href="https://www.tiktok.com/@pizzario53" 
+              <a
+                href="https://www.tiktok.com/@pizzario53"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-12 h-12 sm:w-14 sm:h-14 bg-pizzario-green rounded-full flex items-center justify-center hover:bg-pizzario-red hover:scale-110 transition-all duration-300 shadow-lg" 
+                className="w-12 h-12 sm:w-14 sm:h-14 bg-pizzario-green rounded-full flex items-center justify-center hover:bg-pizzario-red hover:scale-110 transition-all duration-300 shadow-lg"
                 aria-label="TikTok"
               >
                 <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z"/>
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-5.2 1.74 2.89 2.89 0 012.31-4.64 2.93 2.93 0 01.88.13V9.4a6.84 6.84 0 00-1-.05A6.33 6.33 0 005 20.1a6.34 6.34 0 0010.86-4.43v-7a8.16 8.16 0 004.77 1.52v-3.4a4.85 4.85 0 01-1-.1z" />
                 </svg>
               </a>
             </div>
@@ -739,11 +739,11 @@ export default function Index() {
               Prenota la tua pizza!
             </h2>
             <p className="font-montserrat text-base sm:text-lg lg:text-xl text-white/90 mb-6 lg:mb-8">
-              Vieni a scoprire l'autentico sapore della tradizione italo-brasiliana. 
+              Vieni a scoprire l'autentico sapore della tradizione italo-brasiliana.
               Chiamaci per prenotare il tuo tavolo e vivere un'esperienza unica!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a 
+              <a
                 href="tel:+393880993921"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-pizzario-green font-montserrat font-bold rounded-full hover:bg-pizzario-beige hover:scale-105 transition-all duration-300 shadow-xl"
               >
@@ -766,9 +766,9 @@ export default function Index() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
             {/* Logo e descrizione */}
             <div className="lg:col-span-2">
-              <img 
-                src="/src/assets/icons/pizzariologo 1_9.webp" 
-                alt="PizzaRio Logo" 
+              <img
+                src="/src/assets/icons/pizzariologo 1_9.webp"
+                alt="PizzaRio Logo"
                 className="h-20 w-auto mb-4"
                 loading="lazy"
                 decoding="async"
@@ -812,18 +812,18 @@ export default function Index() {
               <p className="font-montserrat text-sm text-white/70">
                 © 2025 PizzaRio. Tutti i diritti riservati. | P.IVA: 12345678901
               </p>
-              
+
               {/* DambyStudio Attribution */}
-              <a 
-                href="https://linktr.ee/dambystudio" 
-                target="_blank" 
+              <a
+                href="https://linktr.ee/dambystudio"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 hover:opacity-80 transition-opacity"
               >
                 <span className="font-montserrat text-sm text-white/70">Realizzato da</span>
-                <img 
-                  src="/src/assets/icons/logoDambyStudio.webp" 
-                  alt="DambyStudio" 
+                <img
+                  src="/src/assets/icons/logoDambyStudio.webp"
+                  alt="DambyStudio"
                   className="h-10 w-auto"
                   loading="lazy"
                   decoding="async"
@@ -844,10 +844,10 @@ export default function Index() {
           className="fixed bottom-4 right-4 sm:bottom-8 sm:right-8 z-50 w-10 h-10 sm:w-12 sm:h-12 lg:w-14 lg:h-14 bg-pizzario-green text-white rounded-full shadow-2xl hover:bg-pizzario-red hover:scale-110 transition-all duration-300 flex items-center justify-center group"
           aria-label="Torna su"
         >
-          <svg 
-            className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 group-hover:animate-bounce" 
-            fill="none" 
-            stroke="currentColor" 
+          <svg
+            className="w-5 h-5 sm:w-6 sm:h-6 lg:w-7 lg:h-7 group-hover:animate-bounce"
+            fill="none"
+            stroke="currentColor"
             viewBox="0 0 24 24"
           >
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 10l7-7m0 0l7 7m-7-7v18" />

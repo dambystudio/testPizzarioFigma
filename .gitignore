@@ -45,3 +45,9 @@ Thumbs.db
 
 # Local Netlify folder
 .netlify
+
+# Agent & System Files
+.agent/
+_bmad/
+_bmad-output/
+make-favicon.mjs
