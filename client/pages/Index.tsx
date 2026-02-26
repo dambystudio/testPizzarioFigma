@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { MerendaBanner } from '../components/MerendaBanner';
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -78,6 +79,7 @@ export default function Index() {
 
   return (
     <div className="w-full overflow-x-hidden">
+      <MerendaBanner />
       {/* Navbar Responsive con Hamburger */}
       <nav className="fixed top-0 left-0 right-0 bg-pizzario-beige shadow-md z-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-12 py-3">
@@ -681,8 +683,8 @@ export default function Index() {
                   <h3 className="font-margarine text-lg sm:text-xl lg:text-2xl text-pizzario-green mb-2">Orari</h3>
                   <div className="font-montserrat text-sm lg:text-base text-pizzario-brown space-y-1">
                     <p><strong>Lun-Dom:</strong> 18:00 - 23:30</p>
-                    <p className="mt-2 text-xs text-pizzario-brown/70 italic">* Possibili chiusure occasionali</p>
-                    <p className="text-xs text-pizzario-brown/70 italic">Vi consigliamo di chiamare prima</p>
+                    <p className="mt-2 text-sm text-pizzario-green"><strong>Aperto la mattina:</strong> (orari entrata a scuola - chiamare per conferma)</p>
+                    <p className="mt-1 text-xs text-pizzario-brown/70 italic">* Possibili chiusure occasionali</p>
                   </div>
                 </div>
               </div>
