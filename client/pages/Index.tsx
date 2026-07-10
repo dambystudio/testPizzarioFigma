@@ -101,7 +101,7 @@ export default function Index() {
             <div className="hidden md:flex gap-6 font-montserrat text-pizzario-brown font-semibold">
               <a href="#home" className="hover:text-pizzario-green transition-colors">Home</a>
               <a href="#chi-siamo" className="hover:text-pizzario-green transition-colors">Chi Siamo</a>
-              <a href="#pizze" className="hover:text-pizzario-green transition-colors">Le Nostre Pizze</a>
+              <a href="/menu" className="hover:text-pizzario-green transition-colors">Menu</a>
               <a href="#contatti" className="hover:text-pizzario-green transition-colors">Contatti</a>
             </div>
 
@@ -147,11 +147,11 @@ export default function Index() {
                 Chi Siamo
               </a>
               <a
-                href="#pizze"
+                href="/menu"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block font-montserrat text-pizzario-brown font-semibold hover:text-pizzario-green transition-colors py-2"
               >
-                Le Nostre Pizze
+                Menu
               </a>
               <a
                 href="#contatti"
@@ -165,8 +165,21 @@ export default function Index() {
         </div>
       </nav>
 
+      {/* Promozione estiva: primo contenuto visibile */}
+      <section id="home" aria-labelledby="promo-estate-title" className="bg-pizzario-red px-4 pb-10 pt-32 sm:px-6 sm:pb-14 sm:pt-36 lg:py-16">
+        <div className="mx-auto grid max-w-6xl items-center gap-7 lg:grid-cols-[1fr_0.72fr] lg:gap-12">
+          <div className="max-w-2xl text-white">
+            <p className="font-montserrat text-xs font-bold uppercase tracking-[0.18em] text-white/80">Promo estate</p>
+            <h1 id="promo-estate-title" className="mt-3 font-margarine text-4xl leading-tight sm:text-5xl lg:text-6xl">La domenica, pizza con vista mare</h1>
+            <p className="mt-4 max-w-prose font-montserrat text-base leading-relaxed text-white/90 sm:text-lg">Da domenica 5 luglio a fine agosto, ogni domenica dalle 7:30 alle 11 prendi la tua pizza da portare al mare.</p>
+            <a href="tel:+393880993921" className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 font-montserrat font-bold text-pizzario-red shadow-xl transition hover:-translate-y-0.5 hover:bg-pizzario-beige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Info e prenotazioni: 388 099 3921</a>
+          </div>
+          <img src="/src/assets/promotions/promo-estate-2026.png" alt="Locandina della promozione estiva PizzaRio: pizza da portare al mare ogni domenica dalle 7:30 alle 11." className="mx-auto aspect-[3/4] w-full max-w-[17rem] rounded-[2rem] border-4 border-white/25 object-cover shadow-2xl sm:max-w-xs lg:max-w-sm" loading="eager" decoding="async" width="1080" height="1440" fetchPriority="high" />
+        </div>
+      </section>
+
       {/* Hero Section - Ottimizzato per mobile */}
-      <section id="home" className="relative bg-pizzario-beige overflow-hidden pt-16 sm:pt-20">
+      <section className="relative bg-pizzario-beige overflow-hidden">
         {/* MOBILE LAYOUT - struttura verticale */}
         <div className="sm:hidden flex flex-col min-h-screen">
           {/* Parte superiore beige con logo, testo e pulsanti */}
@@ -193,7 +206,7 @@ export default function Index() {
             {/* CTA Buttons centrati */}
             <div className="flex flex-col gap-3 mt-6 px-4">
               <a
-                href="#pizze"
+                href="/menu"
                 className="inline-flex items-center justify-center px-6 py-3 bg-pizzario-green text-white text-sm font-montserrat font-semibold rounded-full shadow-lg"
               >
                 Scopri il Menu
@@ -261,7 +274,7 @@ export default function Index() {
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-5 mt-10 lg:mt-12">
                   <a
-                    href="#pizze"
+                    href="/menu"
                     className="inline-flex items-center justify-center px-10 lg:px-12 py-4 lg:py-5 bg-pizzario-green text-white text-base lg:text-xl font-montserrat font-semibold rounded-full hover:bg-pizzario-green/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Scopri il Menu
@@ -733,35 +746,6 @@ export default function Index() {
         </div>
       </section>
 
-      {/* Banner Promozionale - NUOVO */}
-      <section className="relative bg-gradient-to-r from-pizzario-green to-pizzario-green/80 py-12 lg:py-16 overflow-hidden">
-        <div className="container mx-auto px-4 lg:px-8 relative z-10">
-          <div className="text-center max-w-4xl mx-auto">
-            <h2 className="font-margarine text-3xl sm:text-4xl lg:text-5xl text-white mb-4">
-              Prenota la tua pizza!
-            </h2>
-            <p className="font-montserrat text-base sm:text-lg lg:text-xl text-white/90 mb-6 lg:mb-8">
-              Vieni a scoprire l'autentico sapore della tradizione italo-brasiliana.
-              Chiamaci per prenotare il tuo tavolo e vivere un'esperienza unica!
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a
-                href="tel:+393880993921"
-                className="inline-flex items-center justify-center px-8 py-4 bg-white text-pizzario-green font-montserrat font-bold rounded-full hover:bg-pizzario-beige hover:scale-105 transition-all duration-300 shadow-xl"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                </svg>
-                Chiama Ora: +39 388 099 3921
-              </a>
-            </div>
-          </div>
-        </div>
-        {/* Decorative shapes */}
-        <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full -translate-y-1/2 translate-x-1/2"></div>
-        <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/10 rounded-full translate-y-1/2 -translate-x-1/2"></div>
-      </section>
-
       {/* Footer */}
       <footer className="bg-pizzario-brown text-white py-8 lg:py-12">
         <div className="container mx-auto px-4 lg:px-8">
@@ -788,7 +772,7 @@ export default function Index() {
               <ul className="font-montserrat text-sm space-y-2">
                 <li><a href="#home" className="hover:text-pizzario-green transition-colors">Home</a></li>
                 <li><a href="#chi-siamo" className="hover:text-pizzario-green transition-colors">Chi Siamo</a></li>
-                <li><a href="#pizze" className="hover:text-pizzario-green transition-colors">Le Nostre Pizze</a></li>
+                <li><a href="/menu" className="hover:text-pizzario-green transition-colors">Menu</a></li>
                 <li><a href="#contatti" className="hover:text-pizzario-green transition-colors">Contatti</a></li>
               </ul>
             </div>

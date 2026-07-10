@@ -130,4 +130,42 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
+
+  .skip-link {
+    @apply fixed left-4 top-4 z-[100] -translate-y-20 rounded-md bg-pizzario-brown px-4 py-3 font-montserrat text-sm font-bold text-white transition-transform focus:translate-y-0;
+  }
+}
+
+@media print {
+  body {
+    background: white !important;
+  }
+
+  body * {
+    visibility: hidden;
+  }
+
+  .qr-print-area,
+  .qr-print-area * {
+    visibility: visible;
+  }
+
+  .qr-print-area {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    min-height: 100vh;
+    background: white !important;
+    color: #2f2a24 !important;
+  }
+
+  .qr-print-area p,
+  .qr-print-area h2,
+  .qr-print-area div {
+    color: #2f2a24 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
 }
