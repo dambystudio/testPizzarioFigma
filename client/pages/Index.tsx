@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import { MerendaBanner } from '../components/MerendaBanner';
+import { OpeningStatus } from '../components/OpeningStatus';
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -165,13 +166,15 @@ export default function Index() {
         </div>
       </nav>
 
+      <OpeningStatus />
+
       {/* Promozione estiva: primo contenuto visibile */}
       <section id="home" aria-labelledby="promo-estate-title" className="bg-pizzario-red px-4 pb-10 pt-32 sm:px-6 sm:pb-14 sm:pt-36 lg:py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-7 lg:grid-cols-[1fr_0.72fr] lg:gap-12">
           <div className="max-w-2xl text-white">
             <p className="font-montserrat text-xs font-bold uppercase tracking-[0.18em] text-white/80">Promo estate</p>
             <h1 id="promo-estate-title" className="mt-3 font-margarine text-4xl leading-tight sm:text-5xl lg:text-6xl">La domenica, pizza con vista mare</h1>
-            <p className="mt-4 max-w-prose font-montserrat text-base leading-relaxed text-white/90 sm:text-lg">Da domenica 5 luglio a fine agosto, ogni domenica dalle 7:30 alle 11 prendi la tua pizza da portare al mare.</p>
+            <p className="mt-4 max-w-prose font-montserrat text-base leading-relaxed text-white/90 sm:text-lg">Ogni domenica, fino al 31 agosto, dalle 7:30 alle 11: pizza da portare al mare.</p>
             <a href="tel:+393880993921" className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 font-montserrat font-bold text-pizzario-red shadow-xl transition hover:-translate-y-0.5 hover:bg-pizzario-beige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Info e prenotazioni: 388 099 3921</a>
           </div>
           <img src="/src/assets/promotions/promo-estate-2026.png" alt="Locandina della promozione estiva PizzaRio: pizza da portare al mare ogni domenica dalle 7:30 alle 11." className="mx-auto aspect-[3/4] w-full max-w-[17rem] rounded-[2rem] border-4 border-white/25 object-cover shadow-2xl sm:max-w-xs lg:max-w-sm" loading="eager" decoding="async" width="1080" height="1440" fetchPriority="high" />
@@ -696,8 +699,9 @@ export default function Index() {
                   <h3 className="font-margarine text-lg sm:text-xl lg:text-2xl text-pizzario-green mb-2">Orari</h3>
                   <div className="font-montserrat text-sm lg:text-base text-pizzario-brown space-y-1">
                     <p><strong>Lun-Dom:</strong> 18:00 - 23:30</p>
-                    <p className="mt-2 text-sm text-pizzario-green"><strong>Aperto la mattina:</strong> (orari entrata a scuola - chiamare per conferma)</p>
-                    <p className="mt-1 text-xs text-pizzario-brown/70 italic">* Possibili chiusure occasionali</p>
+                    <p className="mt-2 text-sm text-pizzario-green"><strong>Lun-Sab mattina:</strong> chiuso</p>
+                    <p><strong>Domenica mattina:</strong> 07:30 - 11:00 (promo fino al 31 agosto)</p>
+                    <p className="mt-1 text-xs text-pizzario-brown/70 italic">Gli orari scolastici tornano a settembre.</p>
                   </div>
                 </div>
               </div>
