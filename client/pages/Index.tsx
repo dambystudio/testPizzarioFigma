@@ -187,7 +187,18 @@ export default function Index() {
             <p className="mt-4 max-w-prose font-montserrat text-base leading-relaxed text-white/90 sm:text-lg">Ogni domenica, fino al 31 agosto, dalle 7:30 alle 11: pizza da portare al mare.</p>
             <a href="tel:+393880993921" className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 font-montserrat font-bold text-pizzario-red shadow-xl transition hover:-translate-y-0.5 hover:bg-pizzario-beige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Info e prenotazioni: 388 099 3921</a>
           </div>
-          <img src="/src/assets/promotions/promo-estate-2026.png" alt="Locandina della promozione estiva PizzaRio: pizza da portare al mare ogni domenica dalle 7:30 alle 11." className="mx-auto aspect-[3/4] w-full max-w-[17rem] rounded-[2rem] border-4 border-white/25 object-cover shadow-2xl sm:max-w-xs lg:max-w-sm" loading="eager" decoding="async" width="1080" height="1440" fetchPriority="high" />
+          <img
+            src="/src/assets/promotions/promo-estate-2026-320.webp"
+            srcSet="/src/assets/promotions/promo-estate-2026-320.webp 320w, /src/assets/promotions/promo-estate-2026-480.webp 480w, /src/assets/promotions/promo-estate-2026-640.webp 640w"
+            sizes="(min-width: 1024px) 384px, (min-width: 640px) 320px, 272px"
+            alt="Locandina della promozione estiva PizzaRio: pizza da portare al mare ogni domenica dalle 7:30 alle 11."
+            className="mx-auto aspect-[3/4] w-full max-w-[17rem] rounded-[2rem] border-4 border-white/25 object-cover shadow-2xl sm:max-w-xs lg:max-w-sm"
+            loading="eager"
+            decoding="async"
+            width="640"
+            height="853"
+            fetchPriority="high"
+          />
         </div>
       </section>
 
@@ -203,8 +214,8 @@ export default function Index() {
                 src="/src/assets/icons/pizzariologo 1_9.webp"
                 alt="PizzaRio Logo"
                 className="w-full h-auto"
-                fetchPriority="high"
-                loading="eager"
+                
+                loading="lazy"
                 decoding="async"
                 width="600"
                 height="140"
@@ -248,8 +259,8 @@ export default function Index() {
                   src="/src/assets/icons/fotoPizzaBrasileHome.webp"
                   alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo"
                   className="w-full h-auto drop-shadow-2xl"
-                  fetchPriority="high"
-                  loading="eager"
+                  
+                  loading="lazy"
                   decoding="async"
                   width="800"
                   height="800"
@@ -271,8 +282,8 @@ export default function Index() {
                     src="/src/assets/icons/pizzariologo 1_9.webp"
                     alt="PizzaRio Logo"
                     className="w-full h-auto"
-                    fetchPriority="high"
-                    loading="eager"
+                    
+                    loading="lazy"
                     decoding="async"
                     width="600"
                     height="140"
@@ -320,8 +331,8 @@ export default function Index() {
                   src="/src/assets/icons/fotoPizzaBrasileHome.webp"
                   alt="Pizza brasiliana con bandiera del Brasile - PizzaRio San Giovanni Rotondo"
                   className="w-full h-auto drop-shadow-2xl"
-                  fetchPriority="high"
-                  loading="eager"
+                  
+                  loading="lazy"
                   decoding="async"
                   width="800"
                   height="800"
@@ -529,7 +540,7 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img
-                      src="/src/assets/icons/pizza1.webp"
+                      src="/src/assets/icons/pizza1-optimized.webp"
                       alt="Pizza Margherita artigianale"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
@@ -544,7 +555,7 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img
-                      src="/src/assets/icons/pizza2.webp"
+                      src="/src/assets/icons/pizza2-optimized.webp"
                       alt="Pizza Brasiliana speciale"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
@@ -559,7 +570,7 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img
-                      src="/src/assets/icons/pizza3.webp"
+                      src="/src/assets/icons/pizza3-optimized.webp"
                       alt="Pizza Diavola piccante"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
@@ -574,7 +585,7 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img
-                      src="/src/assets/icons/pizza4.webp"
+                      src="/src/assets/icons/pizza4-optimized.webp"
                       alt="Pizza Quattro Formaggi cremosa"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"
@@ -589,7 +600,7 @@ export default function Index() {
                 <div className="flex-shrink-0 w-56 sm:w-72 lg:w-96 xl:w-[420px] snap-center group">
                   <div className="aspect-square rounded-xl sm:rounded-2xl overflow-hidden shadow-xl sm:shadow-2xl cursor-pointer">
                     <img
-                      src="/src/assets/icons/pizza5.webp"
+                      src="/src/assets/icons/pizza5-optimized.webp"
                       alt="Pizza Capricciosa ricca"
                       className="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
                       loading="lazy"

@@ -47,7 +47,9 @@ const menuPage = createPage({
   title: "Menu PizzaRio: pizze, panini e prezzi | San Giovanni Rotondo",
   description: "Consulta il menu PizzaRio con pizze, panini, panzerotti, bevande e prezzi. Pizzeria italo-brasiliana a San Giovanni Rotondo: chiama e prenota.",
   canonical: "/menu/",
-}).replace("</head>", `${menuBreadcrumb}\n</head>`);
+})
+  .replace(/\s*<link rel="preload" as="image"[\s\S]*?\/>/gi, "")
+  .replace("</head>", `${menuBreadcrumb}\n</head>`);
 await writeFile(join(menuDirectory, "index.html"), menuPage);
 
 let notFound = createPage({

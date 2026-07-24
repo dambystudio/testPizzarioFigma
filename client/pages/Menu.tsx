@@ -43,7 +43,7 @@ export default function Menu() {
               <h1 className="mt-2 font-margarine text-4xl leading-none text-pizzario-brown sm:text-5xl">Il nostro menu</h1>
               <p className="mt-3 max-w-xl font-montserrat text-sm leading-relaxed text-pizzario-brown/80 sm:text-base">Scegli una categoria qui sotto. Per prenotazioni, disponibilità e allergeni chiamaci al <a className="font-bold text-pizzario-red underline decoration-pizzario-red/40 underline-offset-4" href={`tel:${phoneNumber}`}>388 099 3921</a>.</p>
             </div>
-            <img src="/src/assets/icons/pizza1.webp" alt="Pizza PizzaRio" className="hidden aspect-square w-48 justify-self-end rounded-full border-4 border-pizzario-green/25 object-cover shadow-lg md:block" width="500" height="411" loading="eager" />
+            <img src="/src/assets/icons/pizza1-optimized.webp" alt="Pizza PizzaRio" className="hidden aspect-square w-48 justify-self-end rounded-full border-4 border-pizzario-green/25 object-cover shadow-lg md:block" width="500" height="411" loading="eager" />
           </div>
         </section>
 
