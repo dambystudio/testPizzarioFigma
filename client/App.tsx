@@ -1,23 +1,19 @@
 import "./global.css";
 
-import { lazy, Suspense } from "react";
 import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-const Index = lazy(() => import("./pages/Index"));
-const Menu = lazy(() => import("./pages/Menu"));
-const NotFound = lazy(() => import("./pages/NotFound"));
+import Index from "./pages/Index";
+import Menu from "./pages/Menu";
+import NotFound from "./pages/NotFound";
 
 const App = () => (
   <BrowserRouter>
-    <Suspense fallback={null}>
-      <Routes>
-        <Route path="/" element={<Index />} />
-        <Route path="/menu" element={<Menu />} />
-        {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Suspense>
+    <Routes>
+      <Route path="/" element={<Index />} />
+      <Route path="/menu" element={<Menu />} />
+      {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+      <Route path="*" element={<NotFound />} />
+    </Routes>
   </BrowserRouter>
 );
 
