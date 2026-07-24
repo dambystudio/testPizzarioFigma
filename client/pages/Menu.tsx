@@ -29,6 +29,13 @@ export default function Menu() {
       </header>
 
       <main id="contenuto-menu">
+        <nav aria-label="Breadcrumb" className="border-b border-pizzario-green/10 bg-pizzario-beige">
+          <ol className="mx-auto flex max-w-5xl items-center gap-2 px-4 py-3 font-montserrat text-xs text-pizzario-brown/70 sm:px-6">
+            <li><Link to="/" className="font-semibold hover:text-pizzario-red">Home</Link></li>
+            <li aria-hidden="true">/</li>
+            <li aria-current="page" className="font-bold text-pizzario-brown">Menu</li>
+          </ol>
+        </nav>
         <section className="border-b border-pizzario-green/20 bg-pizzario-beige">
           <div className="mx-auto grid max-w-5xl gap-5 px-4 py-8 sm:px-6 sm:py-10 md:grid-cols-[1fr_13rem] md:items-center">
             <div>

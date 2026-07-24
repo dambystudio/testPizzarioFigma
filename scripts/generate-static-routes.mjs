@@ -31,14 +31,24 @@ function createPage({ title, description, canonical, robots = "index, follow", o
 
 const menuDirectory = join(outputDirectory, "menu");
 await mkdir(menuDirectory, { recursive: true });
-await writeFile(
-  join(menuDirectory, "index.html"),
-  createPage({
-    title: "Menu PizzaRio: pizze, panini e prezzi | San Giovanni Rotondo",
-    description: "Consulta il menu PizzaRio con pizze, panini, panzerotti, bevande e prezzi. Pizzeria italo-brasiliana a San Giovanni Rotondo: chiama e prenota.",
-    canonical: "/menu/",
-  }),
-);
+const menuBreadcrumb = `
+  <script type="application/ld+json">
+    ${JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://pizzariosgr.it/" },
+        { "@type": "ListItem", position: 2, name: "Menu", item: "https://pizzariosgr.it/menu/" },
+      ],
+    })}
+  </script>`;
+
+const menuPage = createPage({
+  title: "Menu PizzaRio: pizze, panini e prezzi | San Giovanni Rotondo",
+  description: "Consulta il menu PizzaRio con pizze, panini, panzerotti, bevande e prezzi. Pizzeria italo-brasiliana a San Giovanni Rotondo: chiama e prenota.",
+  canonical: "/menu/",
+}).replace("</head>", `${menuBreadcrumb}\n</head>`);
+await writeFile(join(menuDirectory, "index.html"), menuPage);
 
 let notFound = createPage({
   title: "Pagina non trovata | PizzaRio",
@@ -48,6 +58,5 @@ let notFound = createPage({
 });
 notFound = notFound
   .replace(/\s*<link rel="canonical"[^>]*>/i, "")
-  .replace(/\s*<!-- Schema\.org Structured Data[\s\S]*?<!-- Breadcrumb Schema -->/i, "\n\n  <!-- Structured data omitted on the 404 response -->\n  <!-- Breadcrumb Schema -->")
-  .replace(/\s*<!-- Breadcrumb Schema -->[\s\S]*?<\/script>/i, "");
+  .replace(/\s*<!-- Schema\.org Structured Data[\s\S]*?<\/script>/i, "\n\n  <!-- Structured data omitted on the 404 response -->");
 await writeFile(join(outputDirectory, "404.html"), notFound);

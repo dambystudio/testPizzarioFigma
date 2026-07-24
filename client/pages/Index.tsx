@@ -175,12 +175,15 @@ export default function Index() {
 
       <OpeningStatus />
 
+      <main>
+        <h1 className="sr-only">PizzaRio, pizzeria italo-brasiliana a San Giovanni Rotondo</h1>
+
       {/* Promozione estiva: primo contenuto visibile */}
       <section id="home" aria-labelledby="promo-estate-title" className="bg-pizzario-red px-4 pb-10 pt-32 sm:px-6 sm:pb-14 sm:pt-36 lg:py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-7 lg:grid-cols-[1fr_0.72fr] lg:gap-12">
           <div className="max-w-2xl text-white">
             <p className="font-montserrat text-xs font-bold uppercase tracking-[0.18em] text-white/80">Promo estate</p>
-            <h1 id="promo-estate-title" className="mt-3 font-margarine text-4xl leading-tight sm:text-5xl lg:text-6xl">La domenica, pizza con vista mare</h1>
+            <h2 id="promo-estate-title" className="mt-3 font-margarine text-4xl leading-tight sm:text-5xl lg:text-6xl">La domenica, pizza con vista mare</h2>
             <p className="mt-4 max-w-prose font-montserrat text-base leading-relaxed text-white/90 sm:text-lg">Ogni domenica, fino al 31 agosto, dalle 7:30 alle 11: pizza da portare al mare.</p>
             <a href="tel:+393880993921" className="mt-6 inline-flex min-h-12 items-center justify-center rounded-full bg-white px-6 font-montserrat font-bold text-pizzario-red shadow-xl transition hover:-translate-y-0.5 hover:bg-pizzario-beige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Info e prenotazioni: 388 099 3921</a>
           </div>
@@ -756,6 +759,8 @@ export default function Index() {
           </div>
         </div>
       </section>
+
+      </main>
 
       {/* Footer */}
       <footer className="bg-pizzario-brown text-white py-8 lg:py-12">
