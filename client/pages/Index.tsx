@@ -1,6 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import { MerendaBanner } from '../components/MerendaBanner';
 import { OpeningStatus } from '../components/OpeningStatus';
+import { Seo } from '../components/Seo';
 
 export default function Index() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -80,6 +81,12 @@ export default function Index() {
 
   return (
     <div className="w-full overflow-x-hidden">
+      <Seo
+        title="PizzaRio | Pizzeria Italo-Brasiliana a San Giovanni Rotondo"
+        description="Scopri PizzaRio, la pizzeria dove la tradizione italiana incontra lo spirito brasiliano. Pizza artigianale con ingredienti freschi a San Giovanni Rotondo (FG). Prenota ora!"
+        canonical="/"
+        ogType="restaurant"
+      />
       <MerendaBanner />
       {/* Navbar Responsive con Hamburger */}
       <nav className="fixed top-0 left-0 right-0 bg-pizzario-beige shadow-md z-50">

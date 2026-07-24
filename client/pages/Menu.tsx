@@ -1,12 +1,18 @@
 import { ArrowLeft, ChevronUp, Download, Phone, QrCode } from "lucide-react";
 import { Link } from "react-router-dom";
 import { menuCategories } from "../data/menu";
+import { Seo } from "../components/Seo";
 
 const phoneNumber = "+393880993921";
 
 export default function Menu() {
   return (
     <div className="min-h-screen bg-pizzario-beige text-pizzario-brown">
+      <Seo
+        title="Menu PizzaRio: pizze, panini e prezzi | San Giovanni Rotondo"
+        description="Consulta il menu PizzaRio con pizze, panini, panzerotti, bevande e prezzi. Pizzeria italo-brasiliana a San Giovanni Rotondo: chiama e prenota."
+        canonical="/menu"
+      />
       <a className="skip-link" href="#contenuto-menu">Vai al contenuto del menu</a>
 
       <header className="sticky top-0 z-30 border-b border-pizzario-green/20 bg-pizzario-beige/95 shadow-sm backdrop-blur">
