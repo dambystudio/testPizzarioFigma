@@ -11,7 +11,7 @@ export default function Menu() {
       <Seo
         title="Menu PizzaRio: pizze, panini e prezzi | San Giovanni Rotondo"
         description="Consulta il menu PizzaRio con pizze, panini, panzerotti, bevande e prezzi. Pizzeria italo-brasiliana a San Giovanni Rotondo: chiama e prenota."
-        canonical="/menu"
+        canonical="/menu/"
       />
       <a className="skip-link" href="#contenuto-menu">Vai al contenuto del menu</a>
 
@@ -94,12 +94,12 @@ export default function Menu() {
             <div>
               <div className="flex items-center gap-2 font-montserrat text-xs font-bold uppercase tracking-[0.16em] text-white/80"><QrCode className="size-4" aria-hidden="true" /> Sempre con te</div>
               <h2 className="mt-3 font-margarine text-3xl sm:text-4xl">Inquadra e apri il menu</h2>
-              <p className="mt-3 max-w-prose font-montserrat leading-relaxed text-white/90">Il QR porta direttamente a pizzariosgr.it/menu. Puoi stamparlo e metterlo sui tavoli o vicino alla cassa.</p>
+              <p className="mt-3 max-w-prose font-montserrat leading-relaxed text-white/90">Il QR porta direttamente a pizzariosgr.it/menu/. Puoi stamparlo e metterlo sui tavoli o vicino alla cassa.</p>
               <a href="/menu-pizzario.svg" download="qr-menu-pizzario.svg" className="no-print mt-6 inline-flex min-h-11 items-center gap-2 rounded-full bg-white px-5 font-montserrat text-sm font-bold text-pizzario-green transition hover:-translate-y-0.5 hover:bg-pizzario-beige focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"><Download className="size-4" aria-hidden="true" /> Scarica il QR</a>
             </div>
             <figure className="justify-self-center rounded-3xl bg-white p-4 text-center text-pizzario-brown shadow-xl">
               <img src="/menu-pizzario.svg" alt="QR code per aprire il menu digitale PizzaRio" className="mx-auto size-48" width="192" height="192" />
-              <figcaption className="mt-2 font-montserrat text-xs font-bold">pizzariosgr.it/menu</figcaption>
+              <figcaption className="mt-2 font-montserrat text-xs font-bold">pizzariosgr.it/menu/</figcaption>
             </figure>
           </div>
         </section>

@@ -109,7 +109,7 @@ export default function Index() {
             <div className="hidden md:flex gap-6 font-montserrat text-pizzario-brown font-semibold">
               <a href="#home" className="hover:text-pizzario-green transition-colors">Home</a>
               <a href="#chi-siamo" className="hover:text-pizzario-green transition-colors">Chi Siamo</a>
-              <a href="/menu" className="hover:text-pizzario-green transition-colors">Menu</a>
+              <a href="/menu/" className="hover:text-pizzario-green transition-colors">Menu</a>
               <a href="#contatti" className="hover:text-pizzario-green transition-colors">Contatti</a>
             </div>
 
@@ -155,7 +155,7 @@ export default function Index() {
                 Chi Siamo
               </a>
               <a
-                href="/menu"
+                href="/menu/"
                 onClick={() => setMobileMenuOpen(false)}
                 className="block font-montserrat text-pizzario-brown font-semibold hover:text-pizzario-green transition-colors py-2"
               >
@@ -216,7 +216,7 @@ export default function Index() {
             {/* CTA Buttons centrati */}
             <div className="flex flex-col gap-3 mt-6 px-4">
               <a
-                href="/menu"
+                href="/menu/"
                 className="inline-flex items-center justify-center px-6 py-3 bg-pizzario-green text-white text-sm font-montserrat font-semibold rounded-full shadow-lg"
               >
                 Scopri il Menu
@@ -284,7 +284,7 @@ export default function Index() {
                 {/* CTA Buttons */}
                 <div className="flex flex-row gap-5 mt-10 lg:mt-12">
                   <a
-                    href="/menu"
+                    href="/menu/"
                     className="inline-flex items-center justify-center px-10 lg:px-12 py-4 lg:py-5 bg-pizzario-green text-white text-base lg:text-xl font-montserrat font-semibold rounded-full hover:bg-pizzario-green/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                   >
                     Scopri il Menu
@@ -783,7 +783,7 @@ export default function Index() {
               <ul className="font-montserrat text-sm space-y-2">
                 <li><a href="#home" className="hover:text-pizzario-green transition-colors">Home</a></li>
                 <li><a href="#chi-siamo" className="hover:text-pizzario-green transition-colors">Chi Siamo</a></li>
-                <li><a href="/menu" className="hover:text-pizzario-green transition-colors">Menu</a></li>
+                <li><a href="/menu/" className="hover:text-pizzario-green transition-colors">Menu</a></li>
                 <li><a href="#contatti" className="hover:text-pizzario-green transition-colors">Contatti</a></li>
               </ul>
             </div>

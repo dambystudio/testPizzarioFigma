@@ -15,11 +15,6 @@
   to = "/.netlify/functions/api/:splat"
 
 [[redirects]]
-  from = "/menu/"
-  status = 301
-  to = "/menu"
-
-[[redirects]]
   from = "/*"
   status = 404
   to = "/404.html"

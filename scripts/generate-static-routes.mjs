@@ -36,7 +36,7 @@ await writeFile(
   createPage({
     title: "Menu PizzaRio: pizze, panini e prezzi | San Giovanni Rotondo",
     description: "Consulta il menu PizzaRio con pizze, panini, panzerotti, bevande e prezzi. Pizzeria italo-brasiliana a San Giovanni Rotondo: chiama e prenota.",
-    canonical: "/menu",
+    canonical: "/menu/",
   }),
 );
 
